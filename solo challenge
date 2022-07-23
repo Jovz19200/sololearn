@@ -1,0 +1,22 @@
+//  Solo learn challenge  called The snail in the well
+/* The snail climbs up 7 feet each day and slips back 2 feet each night.
+how many days will it take the snail to get out of the well with the given 
+depth*/
+
+// SOLUTION
+ 
+ function main(){
+ var depth = parseInt(readLine(),10);
+ 
+ var deep=0;
+ for(var i=1;;i++){
+ var deep= deep+7;
+ if(deep<depth){
+   var deep= deep-2;
+ }
+ else {
+   break; 
+ }
+ }
+ console.log(i);
+ }
